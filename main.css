@@ -1,0 +1,38 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+:root {
+
+    --font-padrao: "Roboto", sans-serif;
+
+    --cor-titulo1: #23B2EB;
+    --cor-titulo2: #C024E8;
+
+}
+*{
+    margin: auto;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('imagens/imagem-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+
+    font-family: var(--font-padrao);
+}
+
+.cabecalho{
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    font-family: var(--font-padrao);
+    font-weight: 300;
+}
