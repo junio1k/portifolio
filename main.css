@@ -19,7 +19,7 @@
 body{
     height: 100vh;
     background-color: black;
-    background-image: url('imagens/imagem-fundo.jpg');
+    background-image: linear-gradient(in oklab , #292828, #1c1c1c);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -38,24 +38,81 @@ body{
 
     display: flex;
     align-items: center;
+    
 }
+
+#meuNome {
+    background-image: linear-gradient(90deg, #C024E8, #23B2EB);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #ondeEncontrar{
     background: none;
     border: none;
     margin: 25px;
+    cursor: pointer;
 
     color: var(--cor-titulo2);
     font-family: var(--font-padrao);
     font-size:16px;
     font-weight: 600;
+
+    border: 1px solid;
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+
+    transition: ease-in;
 }
-#apresentacao{
-    border: 1px 1px 1px solid;
+
+#ondeEncontrar:hover {
+    cursor: pointer;
+    transition: 1s ease-out; 
+    color: #1c1c1c;
+    background-image: linear-gradient(90deg, var(--cor-titulo1), var(--cor-titulo2));
+    border: none;
+}
+
+#formacao {
+    background: none;
+    border: none;
+    margin: 25px;
+    cursor: pointer;
+
+    color: var(--cor-titulo1);
+    font-family: var(--font-padrao);
+    font-size:16px;
+    font-weight: 600;
+
+    border: 1px solid;
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#formacao:hover {
+    cursor: pointer;
+    transition: 1s ease; 
+    color: white;
+    background-image: linear-gradient(90deg, var(--cor-titulo2), var(--cor-titulo1));
+    border: none;
+}
+
+
+#apresentacao {
     padding: 20px;
     padding-bottom: 40px;
-    width: 600px;
+    width: 550px;
+    height: 15vh;
+    margin: 50px;
+    justify-content: center;
+    text-align: center;
     font-size: 20px;
     font-family: var(--font-padrao);
     font-weight: 500;
-    text-align: center;
+    
+    border: 2px solid blue;
+
 }
