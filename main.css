@@ -13,32 +13,32 @@
 
 }
 *{
-    margin: auto;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0px;
+    outline: 0;
 }
 body{
     height: 100vh;
-    background-color: black;
-    background-image: linear-gradient(in oklab , #292828, #1c1c1c);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image:;
     color: white;
-
 
     font-family: var(--font-padrao);
 }
 
-.cabecalho{
-    margin: 10px;
-    padding: 25px;
-    width: 600px;
-    margin: auto;
-    font-family: var(--font-padrao);
-    font-weight: 300;
+.nav-botao {
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--cor-titulo1);
+    margin: 5px;
+    padding: 7px;
+    font-size: 15px;
+    cursor: pointer;
 
-    display: flex;
-    justify-content: space-between;
-    
+    opacity: 75%;
+}
+.nav-botao i {
+    color: black;
 }
 
 #meuNome {
@@ -47,61 +47,6 @@ body{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-#ondeEncontrar{
-    background: none;
-    border: none;
-    margin: 25px;
-    cursor: pointer;
-
-    color: var(--cor-titulo2);
-    font-family: var(--font-padrao);
-    font-size:16px;
-    font-weight: 600;
-
-    margin-right: 70px;
-
-    border: 1px solid;
-    width: 500px;
-    height: 50px;
-    border-radius: 20px;
-
-    transition: ease-in;
-}
-
-#ondeEncontrar:hover {
-    cursor: pointer;
-    transition: 1s ease-out; 
-    color: #1c1c1c;
-    background-image: linear-gradient(90deg, var(--cor-titulo1), var(--cor-titulo2));
-    border: none;
-}
-
-#formacao {
-    background: none;
-    border: none;
-    margin: 25px;
-    cursor: pointer;
-
-    color: var(--cor-titulo1);
-    font-family: var(--font-padrao);
-    font-size:16px;
-    font-weight: 600;
-
-    border: 1px solid;
-    width: 500px;
-    height: 50px;
-    border-radius: 20px;
-}
-
-#formacao:hover {
-    cursor: pointer;
-    transition: 1s ease; 
-    color: white;
-    background-image: linear-gradient(90deg, var(--cor-titulo2), var(--cor-titulo1));
-    border: none;
-}
-
 
 #apresentacao {
     padding: 20px;

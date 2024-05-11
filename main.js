@@ -1,22 +1,10 @@
 
-let buttonEncontrar = document.getElementById('ondeEncontrar');
-let menu = document.getElementById('menu');
+let navBotao = document.querySelector(".nav-botao");
+let botaoFechar = document.querySelector(".botao-fechar")
 
-let buttonFormacao = document.getElementById('formacao');
-let menu1 = document.getElementById('menu1')
-
-buttonEncontrar.addEventListener('click', function (){
-    if(menu.style.display === 'block'){
-        menu.style.display = 'none';
-    }else {
-        menu.style.display = 'block';
-    }
-});
-
-buttonFormacao.addEventListener('click', function(){
-    if(menu1.style.display === 'block'){
-        menu1.style.display = 'none';
-    }else{
-        menu1.style.display = 'block';
-    }
+navBotao.addEventListener("click", function(){
+    console.log("ok")
+})
+botaoFechar.addEventListener("click", function(){
+    window.alert("tudo certo")
 })
