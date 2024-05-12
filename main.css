@@ -111,6 +111,16 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
+section {
+    margin: 20px;
+    padding: 50px;
+    max-width: 100%;
+
+    display: flex;
+    font-size: 24px;
+    color: rgb(139, 134, 134) ;
+}
+
 #apresentacao {
     padding: 20px;
     padding-bottom: 40px;
@@ -124,5 +134,4 @@ body{
     font-weight: 500;
     
     border: 2px solid #C024E8;
-    
 }
