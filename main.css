@@ -10,6 +10,7 @@
 
     --cor-titulo1: #23B2EB;
     --cor-titulo2: #C024E8;
+    --cor-menu: #0D0D0D;
 
 }
 *{
@@ -20,7 +21,8 @@
 }
 body{
     height: 100vh;
-    background-image:;
+    max-width: 95%;
+    background-color: #0D0D0D;
     color: white;
 
     font-family: var(--font-padrao);
@@ -29,16 +31,75 @@ body{
 .nav-botao {
     border: 0;
     border-radius: 3px;
-    background-color: var(--cor-titulo1);
-    margin: 5px;
-    padding: 7px;
-    font-size: 15px;
+    background-color: transparent;
+    margin: 4px;
+    padding: 5px;
+    font-size: 22px;
     cursor: pointer;
 
-    opacity: 75%;
+    
 }
 .nav-botao i {
-    color: black;
+    color: var(--cor-titulo1);
+    transition: 0.9s;
+}
+
+.nav-botao:hover {
+    transition: ease-in-out;
+    background-image: linear-gradient(45deg, #b622db, #C024E8);
+}
+.menu{
+    width:0%;
+    height: 100%;
+    /**Mudar a cor do menu*/
+    background-color: var(--cor-menu);
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition:all 0.5s;
+
+}
+
+.conteudo-menu {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.menu a {
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    color: var(--cor-titulo2);
+    font-size: 25px;
+    transition: 0.3s;
+    
+}
+.menu a:hover, .menu:focus {
+    color: bisque;
+}
+
+.menu .botao-fechar{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 50px;
+
+    color: #C024E8;
+}
+
+@media screen and (max-heigth: 450px){
+    .menu a {
+        font-size: 20px;
+    }
+    .overlay, .botao-fechar {
+        font-size: 30px ;
+        top: 15px;
+        right: 35px;
+    }
 }
 
 #meuNome {
@@ -51,8 +112,8 @@ body{
 #apresentacao {
     padding: 20px;
     padding-bottom: 40px;
-    width: 550px;
-    height: 15vh;
+    max-width: 100%;
+    max-height: 55vh;
     margin: 50px;
     justify-content: center;
     text-align: center;
@@ -60,6 +121,7 @@ body{
     font-family: var(--font-padrao);
     font-weight: 500;
     
-    border: 2px solid blue;
+    border: 2px solid;
+    border-color: #b622db;
 
 }
