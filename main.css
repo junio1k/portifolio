@@ -21,8 +21,9 @@
 }
 body{
     height: 100vh;
-    max-width: 100&;
-    background-color:#0D0D0D;
+
+    max-width: 95%;
+    background-color: #0D0D0D;
     color: white;
 
     font-family: var(--font-padrao);
@@ -32,12 +33,13 @@ body{
     border: 0;
     border-radius: 3px;
     background-color: transparent;
-    margin: 5px;
+
+    margin: 4px;
     padding: 5px;
     font-size: 22px;
     cursor: pointer;
 
-    opacity: 75%;
+    
 }
 .nav-botao i {
     color: var(--cor-titulo1);
@@ -79,7 +81,7 @@ body{
     
 }
 .menu a:hover, .menu:focus {
-    color: rgb(250, 246, 242);
+    color: bisque;
 }
 
 .menu .botao-fechar{
@@ -113,7 +115,7 @@ body{
     padding: 20px;
     padding-bottom: 40px;
     max-width: 100%;
-    height: 15vh;
+    max-height: 55vh;
     margin: 50px;
     justify-content: center;
     text-align: center;
@@ -122,5 +124,5 @@ body{
     font-weight: 500;
     
     border: 2px solid #C024E8;
-
+    
 }
