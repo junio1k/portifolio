@@ -135,3 +135,34 @@ section {
     
     border: 2px solid #C024E8;
 }
+
+
+.secao_de--apresentacao {
+    margin-left: 70px;
+    border: #23B2EB 1px solid;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 474px;
+    color: white;
+    font-family: var(--font-padrao);
+}
+
+
+.secao_de--apresentacao:hover {
+    background:#b622db;
+}
+
+h1.titulo-bio{
+    color: #23B2EB;
+}
+
+.ferramentas_habilidades{
+    display: flex;
+    justify-content: flex-end;
+}
+label{
+    font-size: 60px;
+   
+}
