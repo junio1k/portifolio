@@ -23,7 +23,7 @@ body{
     height: 100vh;
 
     max-width: 95%;
-    background-color: #0D0D0D;
+    background:linear-gradient(45deg, #575c57, black);
     color: white;
 
     font-family: var(--font-padrao);
@@ -170,13 +170,39 @@ aside{
 .ferramentas_habilidades{
     flex-grow: 5;
     margin-top: 30%;
-
     font-size: 50px;
+    animation: skew 3s initial;
+    transform: skew(20deg);
+    animation-direction: alternate;
 }
+
+@keyframes skew {
+    0% {
+      transform: skewX(10deg);
+    }
+    100% {
+      transform: skewX(-10deg);
+    }
+  }
+
+
 h2{
+
     font-size: 18px;
 }
 
 label{
     margin: 20px;
+}
+
+footer{
+    background: fixed;
+    background:linear-gradient(45deg,#61C4EB, #23B2EB) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    gap: 8em;
+    padding: 50px;
+
 }
